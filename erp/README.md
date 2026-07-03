@@ -23,37 +23,13 @@ A comprehensive, enterprise-grade Event Management & Photo Studio ERP system des
 
 ```
 erp/
-├── frontend/
-│   ├── app/
-│   ├── components/
-│   ├── lib/
-│   ├── styles/
-│   ├── public/
-│   ├── package.json
-│   ├── next.config.js
-│   ├── tailwind.config.js
-│   └── tsconfig.json
-├── backend/
-│   ├── src/
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── .env.example
-├── database/
-│   ├── schema.sql
-│   ├── migrations/
-│   └── seeds/
-├── docker/
-│   ├── docker-compose.yml
-│   ├── Dockerfile.frontend
-│   └── Dockerfile.backend
-├── docs/
-│   ├── API.md
-│   ├── DATABASE.md
-│   ├── SETUP.md
-│   └── DEPLOYMENT.md
-└── scripts/
-    ├── setup.sh
-    └── db-init.sh
+├── frontend/                    # Next.js Frontend
+├── backend/                     # Node.js Express Backend
+├── database/                    # PostgreSQL Schema
+├── docker/                      # Docker Configuration
+├── docs/                        # Documentation
+├── scripts/                     # Setup Scripts
+└── README.md
 ```
 
 ---
