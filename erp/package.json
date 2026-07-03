@@ -1,0 +1,40 @@
+{
+  "name": "candid-carnival-erp",
+  "version": "1.0.0-beta",
+  "description": "Enterprise-grade Event Management & Photo Studio ERP",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "setup": "npm install && npm run db:init",
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "start": "npm start --workspaces",
+    "db:init": "cd backend && npm run db:init",
+    "db:migrate": "cd backend && npm run db:migrate",
+    "db:seed": "cd backend && npm run db:seed",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:build": "docker-compose build",
+    "lint": "npm run lint --workspaces",
+    "test": "npm test --workspaces",
+    "test:e2e": "cd frontend && npm run test:e2e"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "erp",
+    "event-management",
+    "photography",
+    "videography",
+    "crm",
+    "booking",
+    "payments"
+  ],
+  "author": "Candid Carnival Studios",
+  "license": "MIT"
+}
